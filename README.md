@@ -1,4 +1,4 @@
-## DSLPWorld
+## Vehicle Parking System
 
 This is my first OOP Project. This helps to improve object-oriented programming knowledge.
 
