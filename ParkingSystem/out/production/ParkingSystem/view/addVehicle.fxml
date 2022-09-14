@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="300.0" prefWidth="500.0" style="-fx-background-color: #9980FA;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.addVehicleController">
+   <children>
+      <JFXTextField fx:id="vn" focusColor="#141414" labelFloat="true" layoutX="14.0" layoutY="44.0" onAction="#openMW" prefHeight="25.0" prefWidth="208.0" promptText="Vehicle Number" unFocusColor="#171717" />
+      <JFXTextField fx:id="mw" focusColor="#1b1b1b" labelFloat="true" layoutX="14.0" layoutY="114.0" onAction="#openNP" prefHeight="25.0" prefWidth="208.0" promptText="Maximum Weight" unFocusColor="#222020" />
+      <JFXTextField fx:id="np" focusColor="#1d1d1e" labelFloat="true" layoutX="14.0" layoutY="184.0" onAction="#openVT" prefHeight="25.0" prefWidth="208.0" promptText="No Of Passenger" unFocusColor="#0a0a0a" />
+      <Label layoutX="-3.0" prefHeight="17.0" prefWidth="507.0" style="-fx-background-color: #0a3d62;" text="                                                                 Add Vehicle" textFill="#f8f7f7">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="319.0" layoutY="247.0" onAction="#addVehicleDetails" style="-fx-background-color: #1B1464;" text="Add Vehicle" textFill="#fcf9f9">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXComboBox fx:id="cmbVehicleType" layoutX="15.0" layoutY="247.0" onAction="#addVehicleWithEnter" prefHeight="25.0" prefWidth="208.0" promptText="Vehicle Type" />
+   </children>
+</AnchorPane>

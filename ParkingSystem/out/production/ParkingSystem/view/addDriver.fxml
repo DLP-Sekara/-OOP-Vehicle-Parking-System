@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="300.0" prefWidth="500.0" style="-fx-background-color: #9980FA;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.addDriverController">
+   <children>
+      <Label prefHeight="17.0" prefWidth="500.0" style="-fx-background-color: #0a3d62;" text="                                                                 Add Driver" textFill="#fffefe">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="dn" focusColor="#171717" labelFloat="true" layoutX="14.0" layoutY="40.0" onAction="#openNIC" prefHeight="25.0" prefWidth="310.0" promptText="Driver Name" unFocusColor="#111111" />
+      <JFXTextField fx:id="nic" focusColor="#171717" labelFloat="true" layoutX="14.0" layoutY="77.0" onAction="#openDLN" prefHeight="25.0" prefWidth="310.0" promptText="NIC" unFocusColor="#111111" />
+      <JFXTextField fx:id="dln" focusColor="#171717" labelFloat="true" layoutX="14.0" layoutY="117.0" onAction="#openAddress" prefHeight="25.0" prefWidth="310.0" promptText="Driving License No" unFocusColor="#111111" />
+      <JFXTextField fx:id="address" focusColor="#171717" labelFloat="true" layoutX="14.0" layoutY="171.0" onAction="#openContact" prefHeight="39.0" prefWidth="310.0" promptText="Address" unFocusColor="#111111" />
+      <JFXTextField fx:id="contact" focusColor="#171717" labelFloat="true" layoutX="14.0" layoutY="228.0" prefHeight="25.0" prefWidth="310.0" promptText="Contact Number" unFocusColor="#111111" />
+      <JFXButton fx:id="addDriverButton" layoutX="392.0" layoutY="241.0" onAction="#addDriver" style="-fx-background-color: #1B1464;" text="Add Driver" textFill="#f8f7f7" />
+   </children>
+</AnchorPane>

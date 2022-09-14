@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="firstPage" prefHeight="556.0" prefWidth="711.0" style="-fx-background-color: #dcdde1;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.parkingSystemController">
+   <children>
+      <Label layoutX="12.0" layoutY="11.0" prefHeight="23.0" prefWidth="166.0" text="SAMAN RICE(PVT)LTD">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="192.0" layoutY="6.0" prefHeight="31.0" prefWidth="361.0" style="-fx-background-color: #474787;" text="                    Parking System" textFill="#fffafa">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="26.0" layoutY="90.0" text="Select Vehicle">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="26.0" layoutY="130.0" text="Vehicle Type">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="66.0" layoutY="170.0" text="Driver">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="vehicleID" layoutX="122.0" layoutY="78.0" onAction="#selectVehicle" prefHeight="25.0" prefWidth="188.0" />
+      <JFXComboBox fx:id="driverId" layoutX="122.0" layoutY="158.0" prefHeight="25.0" prefWidth="188.0" />
+      <Label fx:id="txtAnswer" layoutX="122.0" layoutY="132.0" prefHeight="17.0" prefWidth="139.0" />
+      <Label fx:id="time" layoutX="481.0" layoutY="63.0" prefHeight="31.0" prefWidth="166.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="482.0" layoutY="126.0" onAction="#parkVehicle" prefHeight="25.0" prefWidth="166.0" style="-fx-background-color: #34495e;" text="Park Vehicle" textFill="#fcf9f9">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="btnOnDeliveryShift" layoutX="482.0" layoutY="176.0" onAction="#onDeliveryShift" prefHeight="25.0" prefWidth="166.0" style="-fx-background-color: #34495e;" text="On Dilivery Shift" textFill="#f8f8f8">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="482.0" layoutY="466.0" onAction="#openSecondPage" prefHeight="25.0" prefWidth="166.0" style="-fx-background-color: #34495e;" text="Management Log in" textFill="#f8f8f8">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Label fx:id="parkingSlot" layoutX="71.0" layoutY="322.0" prefHeight="40.0" prefWidth="289.0" textFill="#047522">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Label>
+      <Label fx:id="warning" layoutX="482.0" layoutY="255.0" prefHeight="17.0" prefWidth="166.0" textFill="#f20101">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="slotNumber" layoutX="156.0" layoutY="374.0" prefHeight="108.0" prefWidth="139.0" textFill="#200254">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
